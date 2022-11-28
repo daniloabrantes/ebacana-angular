@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: var(--secundary-dark);
+}
+
+.tit {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--primary-light);
+    font-weight: 900;
+}
+
+.subtit {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-medium);
+    font-weight: 450;
+}
+
+p {
+    color: var(--light);
+}
+
+.text {
+    color: var(--dark);
+}
+
+.block {
+    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.button-primay {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.modal-footer .button-primay:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+#slider .button-primay:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+#pedido .button-primay:hover {
+    background-color: var(--primary-medium);
+    border-color: var(--primary-light);
+    color: var(--tertiary);
+}
+
+#slider .button-primay-outline {
+    border-color: var(--primary);
+    color: var(--primary-medium);
+}
+
+#slider .button-primay-outline:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+#info .button-primay-outline {
+    border-color: var(--light);
+    color: var(--primary-medium);
+}
+
+#info .button-primay-outline:hover {
+    background-color: var(--secundary);
+    border-color: var(--primary-dark);
+    color: white;
+}

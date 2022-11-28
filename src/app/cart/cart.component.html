@@ -1,0 +1,82 @@
+<div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Consultar Pedido</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Cart Close -->
+        <div class="modal-body">
+            <div class="cart">
+                <!-- Cart Content -->
+                <div class="cart__content">
+                    <!-- Cart Products -->
+                    <div class="cart__products">
+                        <!-- Cart Empty -->
+                        <div class="cart__empty" data-empty-cart>
+                            <img
+                                src="https://raw.githubusercontent.com/marclerodrigues/shopping-cart/main/assets/images/empty%20cart.png" />
+                            <div class="empty__title">Your bag is empty</div>
+
+                            <div class="empty__subtitle">
+                                Looks like you haven’t added any items to the bag yet. Start
+                                shopping to fill it in.
+                            </div>
+                        </div>
+                        <!-- End Card Empty -->
+
+                        <!-- Card Total Items -->
+                        <div class="cart__total-items" data-not-empty-cart>
+                            <span class="cart__total-label"> Total Items: </span>
+                            <span class="cart__total-value"> 0 </span>
+                        </div>
+                        <!-- End Card Total Items -->
+                    </div>
+                    <!-- End Cart Products -->
+
+                    <!-- Cart Actions -->
+                    <div class="cart__actions">
+                        <div class="cart__summary" data-not-empty-cart>
+                            <!-- Summary Item -->
+                            <div class="summary__item">
+                                <div class="summary__label">Subtotal:</div>
+                                <div class="summary__value" data-subtotal>$0.00</div>
+                            </div>
+                            <!-- End Summary Item -->
+
+                            <!-- Summary Item -->
+                            <div class="summary__item">
+                                <div class="summary__label">Shipping:</div>
+                                <div class="summary__value">$0.00</div>
+                            </div>
+                            <!-- End Summary Item -->
+
+                            <!-- Summary Item -->
+                            <div class="summary__item">
+                                <div class="summary__label">Discount:</div>
+                                <div class="summary__value">$0.0</div>
+                            </div>
+                            <!-- End Summary Item -->
+
+                            <!-- Summary Item -->
+                            <div class="summary__item">
+                                <div class="summary__label">Grand Total:</div>
+                                <div class="summary__value" data-grand-total>$0.00</div>
+                            </div>
+                            <!-- End Summary Item -->
+                        </div>
+                    </div>
+                    <!-- End Cart Actions -->
+                    <!-- End Cart Content -->
+                    <div class="modal-footer">
+                        <a class="nav-link" routerLink="/Pedidos">
+                        <button type="button"
+                            class="btn button-primay btn-primary button d-md-inline-block d-block mb-md-0 mb-2 mr-md-2"
+                            data-bs-toggle="modal" data-bs-target="#janela-modal" data-bs-dismiss="modal">Finalizar Pedido
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

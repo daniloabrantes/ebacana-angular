@@ -1,0 +1,110 @@
+<div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Realizar Pedido</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="./main.php" method="POST">
+                <label for="inputNome" class="form-label subtit">Nome Completo</label>
+                <input type="text" class="form-control" name="nome" placeholder="Insira seu Nome" id="inputNome"
+                    required="" />
+                <label for="phone" class="form-label subtit">Telefone</label>
+                <input type="tel" class="form-control" name="telefone"
+                    pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})"
+                    placeholder="ex: (19)12345-6789" id="phone" required="" />
+                <label for="inputMail" class="form-label subtit">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="contato@gmail.com" id="inputMail"
+                    required="" />
+                <div class="check">
+                    <div class="form-check"><br>
+                        <input class="form-check-input" type="radio" name="entrega" id="Entrega" value="Entrega"
+                            onclick="text(0)" checked />
+                        <label class="form-check-label subtit" for="Entrega">Entrega</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="entrega" id="Retirada" value="Retirada"
+                            onclick="text(1)" />
+                        <label class="form-check-label subtit" for="Retirada">Retirada</label>
+                    </div>
+                </div>
+                <div id="code">
+                    <label>Cep:
+                        <input class="form-control" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            placeholder="Insira seu CEP" /></label>
+                    <br>
+                    <label>Rua:
+                        <input class="form-control" name="rua" type="text" id="rua" size="50"
+                            placeholder="Insira seu endereço" /></label><br />
+                    <label>Bairro:
+                        <input class="form-control" name="bairro" type="text" id="bairro" size="50"
+                            placeholder="Insira seu bairro" /></label><br />
+                    <label for="inputNumero" class="form-label subtit">Número</label>
+                    <input type="num" class="form-control" name="num" placeholder="Insira o número" id="inputNumero" size="10">
+                    <label>Cidade:
+                        <input name="cidade" type="text" id="cidade" size="50"
+                            placeholder="Insira sua cidade" /></label><br />
+                    <label>Estado:
+                        <select name="uf" for="select" id="uf" size="1">
+                            <option value="Vazio">---Vazio---</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </label><br />
+                </div>
+                <br>
+                <h4>Formas de Pagamento</h4>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pagamento" id="Dinheiro" value="Dinheiro"
+                        checked />
+                    <label class="form-check-label subtit" for="Dinheiro">Dinheiro</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input subtit" type="radio" name="pagamento" id="Cartão(Débito)"
+                        value="Cartão(Débito)" />
+                    <label class="form-check-label subtit" for="Cartão(Débito)">Cartão(Débito)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pagamento" id="Cartão(Crédito)"
+                        value="Cartão(Crédito)" />
+                    <label class="form-check-label subtit" for="Cartão(Crédito)">Cartão(Crédito)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pagamento" id="Vale Refeição"
+                        value="Vale Refeição" />
+                    <label class="form-check-label subtit" for="Vale Refeição">Vale Refeição</label>
+                </div><br>
+                <label for="FormControlTextarea1" class="form-label subtit">Observações:</label>
+                <textarea class="form-control" name="observacao" id="FormControlTextarea1" rows="3"
+                    placeholder="Insira uma observação caso deseje: "></textarea>
+                <input type="submit" name="submit" value="Enviar" />
+            </form>
+        </div>
+    </div>
+</div>
